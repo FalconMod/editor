@@ -2,8 +2,8 @@
 const manifest = {
   "editorOnly": true,
   "noTranslations": true,
-  "name": "Customizable block shape",
-  "description": "Adjust the padding, corner radius, and notch height of blocks.",
+  "name": "Custom Block Shape",
+  "description": "Adjust the padding, corner radius, and notch height of blocks to your preference..",
   "tags": [
     "theme"
   ],
@@ -15,6 +15,10 @@ const manifest = {
     {
       "name": "lisa_wolfgang",
       "link": "https://scratch.mit.edu/users/lisa_wolfgang/"
+    },
+       {
+      "name": "-Charcoal_Afterlife-",
+      "link": "https://scratch.mit.edu/users/-Charcoal_Afterlife-/
     },
     {
       "name": "GarboMuffin",
@@ -38,30 +42,30 @@ const manifest = {
   "settings": [
     {
       "dynamic": true,
-      "name": "Padding size (50-200%)",
+      "name": "Padding size (0 - 550%)",
       "id": "paddingSize",
       "type": "integer",
-      "min": 50,
-      "default": 100,
-      "max": 200
+      "min": 0,
+      "default": 85,
+      "max": 550
     },
     {
       "dynamic": true,
-      "name": "Corner size (0-300%)",
+      "name": "Corner size (0 to 550%)",
       "id": "cornerSize",
       "type": "integer",
       "min": 0,
-      "default": 100,
-      "max": 300
+      "default": 110,
+      "max": 550
     },
     {
       "dynamic": true,
-      "name": "Notch height (0-150%)",
+      "name": "Notch height (0 - 550%)",
       "id": "notchSize",
       "type": "integer",
       "min": 0,
-      "default": 100,
-      "max": 150
+      "default": 125,
+      "max": 550
     }
   ],
   "presets": [
@@ -85,6 +89,16 @@ const manifest = {
         "notchSize": 75
       }
     },
+          {
+      "name": "2.0 Flat",
+      "id": "default2",
+      "description": "An appearance similar to Scratch 2.0 blocks with notches and corners removed.",
+      "values": {
+        "paddingSize": 70,
+        "cornerSize": 0,
+        "notchSize": 0
+      }
+    },
     {
       "name": "3.0 Flat",
       "id": "flat3",
@@ -95,6 +109,26 @@ const manifest = {
         "notchSize": 0
       }
     },
+          {
+      "name": "Puzzle3",
+      "id": "puz3",
+      "description": "Scratch 3.0 blocks with corners removed",
+      "values": {
+        "paddingSize": 100,
+        "cornerSize": 0,
+        "notchSize": 100
+      }
+    },
+                {
+      "name": "Puzzle2",
+      "id": "puz2",
+      "description": "Scratch 2.0 blocks with corners removed",
+      "values": {
+        "paddingSize": 70,
+        "cornerSize": 0,
+        "notchSize": 100
+      }
+    },
     {
       "name": "2.0 Flat",
       "id": "flat2",
@@ -103,6 +137,16 @@ const manifest = {
         "paddingSize": 70,
         "cornerSize": 0,
         "notchSize": 0
+      }
+    },
+          {
+      "name": "FalconMod Default",
+      "id": "flat2",
+      "description": "The Default Block Shape for FalconMod.",
+      "values": {
+        "paddingSize": 85,
+        "cornerSize": 110,
+        "notchSize": 125
       }
     }
   ]
